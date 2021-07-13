@@ -1,0 +1,17 @@
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\DataReaderExample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\DataReaderExample\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\DataReaderExample\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\DataReaderExample\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\DataReaderExample\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\DataReaderExample\bin\Debug\DataReaderExample.exe.config
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\DataReaderExample\obj\x86\Debug\SpssLib.Examples.DataReader.Properties.Resources.resources
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\DataReaderExample\bin\Debug\DataReaderExample.exe
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\DataReaderExample\bin\Debug\DataReaderExample.pdb
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\DataReaderExample\bin\Debug\SpssLib.dll
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\DataReaderExample\bin\Debug\SpssLib.pdb
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\DataReaderExample\obj\x86\Debug\DataReaderExample.exe
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\DataReaderExample\obj\x86\Debug\DataReaderExample.pdb
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\DataReaderExample\obj\x86\Debug\SpssLib.Examples.DataReader.MainForm.resources
+C:\Users\Elmar\Documents\programming\Stats Project\SpssLib\DataReaderExample\bin\Debug\DataReaderExample.exe.config
+C:\Users\Elmar\Documents\programming\Stats Project\SpssLib\DataReaderExample\obj\x86\Debug\DataReaderExample.exe
+C:\Users\Elmar\Documents\programming\Stats Project\SpssLib\DataReaderExample\obj\x86\Debug\DataReaderExample.pdb

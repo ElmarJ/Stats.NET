@@ -1,0 +1,15 @@
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<ProjectRoot Condition="'$(ProjectRoot)' == ''">..\..\..</ProjectRoot>
+    <OutputPath>$(ProjectRoot)\bin</OutputPath>
+    <SampleOutputPath>$(OutputPath)</SampleOutputPath>
+    
+    <!-- Project paths -->
+    <CMProjectPath>$(ProjectRoot)\src\ComponentModel</CMProjectPath>
+    
+    <BuildTargetsImport Condition="'$(ProjectLanguage)' != 'VisualBasic'">$(MSBuildBinPath)\Microsoft.CSHARP.Targets</BuildTargetsImport>
+    <BuildTargetsImport Condition="'$(ProjectLanguage)' == 'VisualBasic'">$(MSBuildBinPath)\Microsoft.VisualBasic.targets</BuildTargetsImport>
+    
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+</Project>

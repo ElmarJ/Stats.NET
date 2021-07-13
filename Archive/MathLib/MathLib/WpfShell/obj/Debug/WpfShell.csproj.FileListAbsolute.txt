@@ -1,0 +1,16 @@
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\bin\Debug\WpfShell.exe
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\bin\Debug\WpfShell.pdb
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\obj\Debug\MainWindow.baml
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\obj\Debug\MainWindow.g.cs
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\obj\Debug\App.g.cs
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\obj\Debug\WpfShell_MarkupCompile.cache
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\obj\Debug\WpfShell.g.resources
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\obj\Debug\WpfShell.Properties.Resources.resources
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\obj\Debug\WpfShell.csproj.GenerateResource.Cache
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\obj\Debug\WpfShell.exe
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\obj\Debug\WpfShell.pdb
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\bin\Debug\MathLib.dll
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\bin\Debug\NGenerics.dll
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\bin\Debug\MathLib.pdb
+C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\MathLib\WpfShell\obj\Debug\WpfShell_MarkupCompile.lref

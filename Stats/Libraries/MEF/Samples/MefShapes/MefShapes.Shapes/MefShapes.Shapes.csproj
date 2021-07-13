@@ -1,0 +1,48 @@
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\SampleApplications.settings.targets"/>
+  <PropertyGroup>
+    <ProjectGuid>{8DE4EE4D-2BF1-495B-AA35-8D393F87EBF8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <OutputPath>$(SampleOutputPath)\MefShapes</OutputPath>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MefShapes.Shapes</RootNamespace>
+    <AssemblyName>MefShapes.Shapes</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore"/>
+    <Reference Include="System"/>
+    <Reference Include="System.Core"/>
+    <Reference Include="System.Data"/>
+    <Reference Include="System.Xml"/>
+    <Reference Include="WindowsBase"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyAttributes.cs">
+      <Link>AssemblyAttributes.cs</Link>
+    </Compile>
+    <Compile Include="CellFactory.cs"/>
+    <Compile Include="Dimensions.cs"/>
+    <Compile Include="Direction.cs"/>
+    <Compile Include="GlobalSuppressions.cs"/>
+    <Compile Include="IAccelerationStrategy.cs"/>
+    <Compile Include="IPositionedElement.cs"/>
+    <Compile Include="IShape.cs"/>
+    <Compile Include="Library\IShapeMetadata.cs"/>
+    <Compile Include="Library\PictureShape.cs"/>
+    <Compile Include="Library\Environment.cs"/>
+    <Compile Include="Library\RegularShape.cs"/>
+    <Compile Include="Library\ShapeFactory.cs"/>
+    <Compile Include="PositionedElement.cs"/>
+    <Compile Include="ReachedBottomEventArgs.cs"/>
+    <Compile Include="Shape.cs"/>
+    <Compile Include="Cell.cs"/>
+    <Compile Include="Wpf\IMefShapesGame.cs"/>
+    <Compile Include="Wpf\MefShapesGame.cs"/>
+    <Compile Include="Wpf\WpfCell.cs"/>
+    <Compile Include="Wpf\WpfCellFactory.cs"/>
+  </ItemGroup>
+  <Import Project="..\..\SampleApplications.targets"/>
+</Project>

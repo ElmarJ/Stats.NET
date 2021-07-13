@@ -1,0 +1,10 @@
+C:\Users\Elmar\Documents\Programmeren\Statistiek.net\MathLib\MathLib\AddInContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Elmar\Documents\Programmeren\Statistiek.net\MathLib\MathLib\AddInContracts\bin\Debug\MathLib.dll
+C:\Users\Elmar\Documents\Programmeren\Statistiek.net\MathLib\MathLib\AddInContracts\bin\Debug\NGenerics.dll
+C:\Users\Elmar\Documents\Programmeren\Statistiek.net\MathLib\MathLib\AddInContracts\bin\Debug\MathLib.pdb
+C:\Users\Elmar\Documents\Programmeren\Statistiek.net\MathLib\MathLib\AddInContracts\bin\Debug\NGenerics.pdb
+C:\Users\Elmar\Documents\Programmeren\Statistiek.net\MathLib\MathLib\AddInContracts\bin\Debug\NGenerics.xml
+C:\Users\Elmar\Documents\Programmeren\Statistiek.net\MathLib\MathLib\AddInContracts\bin\Debug\AddIns.Contracts.dll
+C:\Users\Elmar\Documents\Programmeren\Statistiek.net\MathLib\MathLib\AddInContracts\bin\Debug\AddIns.Contracts.pdb
+C:\Users\Elmar\Documents\Programmeren\Statistiek.net\MathLib\MathLib\AddInContracts\obj\Debug\AddIns.Contracts.dll
+C:\Users\Elmar\Documents\Programmeren\Statistiek.net\MathLib\MathLib\AddInContracts\obj\Debug\AddIns.Contracts.pdb

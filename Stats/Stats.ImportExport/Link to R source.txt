@@ -1,0 +1,1 @@
+﻿http://cran.r-project.org/web/packages/foreign/index.html for all interoparability code

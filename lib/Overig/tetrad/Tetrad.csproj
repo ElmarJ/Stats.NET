@@ -1,0 +1,1323 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <SchemaVersion>2.0</SchemaVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Tetrad</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tetrad</RootNamespace>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <ProjectGuid>{9A7CEAFA-F22B-4E18-ACCF-595B7D36D24E}</ProjectGuid>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.Xml</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="shuttle\ConvertUtils.cs" />
+    <Compile Include="shuttle\DataType.cs" />
+    <Compile Include="shuttle\Record.cs" />
+    <Compile Include="shuttle\ShuttleDataConverter.cs" />
+    <Compile Include="shuttle\TestConvertUtils.cs" />
+    <Compile Include="shuttle\TestFoolingAround.cs" />
+    <Compile Include="shuttle\TestShuttleDataConverter.cs" />
+    <Compile Include="SupportClass.cs" />
+    <Compile Include="TestCyclicity.cs" />
+    <Compile Include="TestSerialization.cs" />
+    <Compile Include="TestWatchedProcessDialogs.cs" />
+    <Compile Include="tetradapp\app\AboutTetradAction.cs" />
+    <Compile Include="tetradapp\app\CloseSessionAction.cs" />
+    <Compile Include="tetradapp\app\ConstructTemplateAction.cs" />
+    <Compile Include="tetradapp\app\CopySubsessionAction.cs" />
+    <Compile Include="tetradapp\app\CutSubsessionAction.cs" />
+    <Compile Include="tetradapp\app\DeleteSubsessionAction.cs" />
+    <Compile Include="tetradapp\app\ExitAction.cs" />
+    <Compile Include="tetradapp\app\FontSelectionAction.cs" />
+    <Compile Include="tetradapp\app\LicenseAction.cs" />
+    <Compile Include="tetradapp\app\LoadSessionAction.cs" />
+    <Compile Include="tetradapp\app\NewSessionAction.cs" />
+    <Compile Include="tetradapp\app\NoteDisplayComp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\app\PasteSubsessionAction.cs" />
+    <Compile Include="tetradapp\app\SaveSessionAction.cs" />
+    <Compile Include="tetradapp\app\SaveSessionAsAction.cs" />
+    <Compile Include="tetradapp\app\SessionConfig.cs" />
+    <Compile Include="tetradapp\app\SessionDisplayComp.cs" />
+    <Compile Include="tetradapp\app\SessionEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\app\SessionEditorEdge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\app\SessionEditorNode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\app\SessionEditorToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\app\SessionEditorWorkbench.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\app\SessionUtils.cs" />
+    <Compile Include="tetradapp\app\SessionVersionAction.cs" />
+    <Compile Include="tetradapp\app\SessionWrappers.cs" />
+    <Compile Include="tetradapp\app\StdDisplayComp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\app\SubsessionSelection.cs" />
+    <Compile Include="tetradapp\app\TestSessionEditorWorkbench.cs" />
+    <Compile Include="tetradapp\app\TetFileFilter.cs" />
+    <Compile Include="tetradapp\app\TetradDesktop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\app\TetradHelpBroker.cs" />
+    <Compile Include="tetradapp\app\TetradInternalFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tetradapp\app\TetradMenuBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\app\WarrantyAction.cs" />
+    <Compile Include="tetradapp\app\WindowMenuListener.cs" />
+    <Compile Include="tetradapp\editor\AbstractSearchEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BayesDataParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BayesEstimatorEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BayesEstimatorEditorWizard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BayesEstimatorNodeEditingTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BayesImEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BayesImEditorWizard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BayesImNodeEditingTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BayesImParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BayesPmEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BayesPmEditorWizard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BayesPmParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BayesSimulationParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BayesUpdaterClassifierEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BayesUpdaterEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BootstrapSamplerAction.cs" />
+    <Compile Include="tetradapp\editor\BootstrapSamplerParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BuildPureClustersIndTestParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\BuildPureClustersParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\ClusterEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\ClusterRenderer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\ContinuousDiscretizationEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\ConvertToCorrMatixAction.cs" />
+    <Compile Include="tetradapp\editor\ConvertToCovMatixAction.cs" />
+    <Compile Include="tetradapp\editor\CopyKnowledgeAction.cs" />
+    <Compile Include="tetradapp\editor\CopySubgraphAction.cs" />
+    <Compile Include="tetradapp\editor\CovMatrixDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\CovMatrixJTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\CovMatrixTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\CreateTimeSeriesDataAction.cs" />
+    <Compile Include="tetradapp\editor\DagEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DagGraphToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DataCellEditor.cs" />
+    <Compile Include="tetradapp\editor\DataDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DataEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DataModelContainer.cs" />
+    <Compile Include="tetradapp\editor\DirichletBayesImCountsWizard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DirichletBayesImEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DirichletBayesImNodeCountsTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DirichletBayesImNodeEditingTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DirichletBayesImNodeProbsTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DirichletBayesImParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DirichletBayesImProbsWizard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DirichletEstimatorNodeEditingTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DirichletEstimatorParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DiscDetIndepParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DiscreteDiscretizationEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DiscretizationEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\DiscretizerAction.cs" />
+    <Compile Include="tetradapp\editor\EditorWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\EmBayesEstimatorEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\EMBayesEstimatorEditorWizard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\EMBayesEstimatorParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\EvidenceEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\EvidenceWizardMultiple.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\EvidenceWizardSingle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\ExpandCaseMultipliersAction.cs" />
+    <Compile Include="tetradapp\editor\ExtraCategoryAction.cs" />
+    <Compile Include="tetradapp\editor\FciCcdSearchEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\FciIndTestParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\FciSearchParamEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\GesIndTestParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\GraphComparisonParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\GraphEditable.cs" />
+    <Compile Include="tetradapp\editor\GraphEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\GraphParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\GraphToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\Histogram.cs" />
+    <Compile Include="tetradapp\editor\HistogramChartFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\HistogramChartView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\HistogramLegendView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\IndependenceFactsAction.cs" />
+    <Compile Include="tetradapp\editor\IndTestParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\KnowledgeMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\KnowledgeSelection.cs" />
+    <Compile Include="tetradapp\editor\LoadDataAction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\LoadDiscreteDataIndicesAction.cs" />
+    <Compile Include="tetradapp\editor\LoadDiscreteDataLabelsAction.cs" />
+    <Compile Include="tetradapp\editor\LoadKnowledgeAction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\LoadTimeSeriesDataAction.cs" />
+    <Compile Include="tetradapp\editor\LogisticRegressionEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\LogisticRegressionParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\LogisticRegressionParamsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\MbPatternDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\MbSearchEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\MbSearchParamEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\MimBuildIndTestParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\MimBuildParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\MimSearchEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\MissingDataInjectorAction.cs" />
+    <Compile Include="tetradapp\editor\MissingDataInjectorParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\ModeInterpolatorAction.cs" />
+    <Compile Include="tetradapp\editor\NoteEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\NumberCellEditor.cs" />
+    <Compile Include="tetradapp\editor\NumberCellRenderer.cs" />
+    <Compile Include="tetradapp\editor\ParameterEditor.cs" />
+    <Compile Include="tetradapp\editor\PasteKnowledgeAction.cs" />
+    <Compile Include="tetradapp\editor\PasteSubgraphAction.cs" />
+    <Compile Include="tetradapp\editor\PatternDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\PcGesSearchEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\PcIndTestParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\PcSearchParamEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\PcxClassifyROCData.cs" />
+    <Compile Include="tetradapp\editor\PredictionEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\PurifyIndTestParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\PurifyParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\RandomDagEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\RandomMimParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\RandomSamplerAction.cs" />
+    <Compile Include="tetradapp\editor\RegressionEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\RegressionEditorWizard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\RegressionParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\RegressionParamsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\RemoveMissingValueCasesAction.cs" />
+    <Compile Include="tetradapp\editor\RocPlot.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\RowTotalEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SaveBayesImXmlAction.cs" />
+    <Compile Include="tetradapp\editor\SaveComponentImage.cs" />
+    <Compile Include="tetradapp\editor\SaveDataAction.cs" />
+    <Compile Include="tetradapp\editor\SaveGraph.cs" />
+    <Compile Include="tetradapp\editor\SaveKnowledgeAction.cs" />
+    <Compile Include="tetradapp\editor\SaveScreenshot.cs" />
+    <Compile Include="tetradapp\editor\SearchGaParamEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SearchParamEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SearchParamGesEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SemDataParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SemEvidenceEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SemEvidenceWizardMultiple.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SemEvidenceWizardSingle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SemGraphEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SemGraphToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SemImEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SemPmEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SemSimulationParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SemUpdaterEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SetupLoggingAction.cs" />
+    <Compile Include="tetradapp\editor\SimpleSimPropsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SplitByCollinearColumnsAction.cs" />
+    <Compile Include="tetradapp\editor\SplitCasesAction.cs" />
+    <Compile Include="tetradapp\editor\SplitCasesEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\StructEmBayesSearchEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\StructEMBayesSearchEditorWizard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\StructEMBayesSearchParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\SubgraphSelection.cs" />
+    <Compile Include="tetradapp\editor\SubsetContinuousVariablesAction.cs" />
+    <Compile Include="tetradapp\editor\SubsetDiscreteVariablesAction.cs" />
+    <Compile Include="tetradapp\editor\SubsetSelectedVariablesAction.cs" />
+    <Compile Include="tetradapp\editor\TabularDataJTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\TabularDataTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\TabularDataTransferHandler.cs" />
+    <Compile Include="tetradapp\editor\TemporalTierEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\Tier.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\TierList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\TimeSeriesDataDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\TimeSeriesDataDisplayJTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\TimeSeriesIndTestParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\UpdatedBayesImWizard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\UpdatedSemImWizard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\editor\XmlIo.cs" />
+    <Compile Include="tetradapp\gene\editor\BooleanGlassGeneImEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\BooleanGlassGenePmEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\DirectedGraphNode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\DirectedGraphToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\DirectedGraphWorkbench.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\GeneDataEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\GraphTableWorkbench.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\LabeledGraphEdge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\LagGraphEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\LagGraphParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\LagGraphTetradMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\LagGraphTopToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\LagGraphWorkbench.cs" />
+    <Compile Include="tetradapp\gene\editor\ManualLagGraphParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\MeasurementModelPropertyEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\MeasurementSimulatorPropertyEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\MultiGraphEdge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\MultiGraphNode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\MultiGraphScrollHandler.cs" />
+    <Compile Include="tetradapp\gene\editor\MultiGraphToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\MultiGraphWorkbench.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\StoredLagGraphParamsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\TableToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\gene\editor\TimesteppedFactor.cs" />
+    <Compile Include="tetradapp\gene\editor\WeightedDisplayEdgeInterface.cs" />
+    <Compile Include="tetradapp\knowledge_editor\KnowledgeDisplayEdge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\knowledge_editor\KnowledgeDisplayNode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\knowledge_editor\KnowledgeEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\knowledge_editor\KnowledgeEditorToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\knowledge_editor\KnowledgeGraph.cs" />
+    <Compile Include="tetradapp\knowledge_editor\KnowledgeModelEdge.cs" />
+    <Compile Include="tetradapp\knowledge_editor\KnowledgeModelNode.cs" />
+    <Compile Include="tetradapp\knowledge_editor\KnowledgeWorkbench.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\model\AbstractAlgorithmRunner.cs" />
+    <Compile Include="tetradapp\model\AbstractMimRunner.cs" />
+    <Compile Include="tetradapp\model\AlgorithmRunner.cs" />
+    <Compile Include="tetradapp\model\ApproximateUpdaterWrapper.cs" />
+    <Compile Include="tetradapp\model\BasicIndTestParams.cs" />
+    <Compile Include="tetradapp\model\BasicSearchParams.cs" />
+    <Compile Include="tetradapp\model\BayesDataParams.cs" />
+    <Compile Include="tetradapp\model\BayesDataWrapper.cs" />
+    <Compile Include="tetradapp\model\BayesEstimatorWrapper.cs" />
+    <Compile Include="tetradapp\model\BayesImParams.cs" />
+    <Compile Include="tetradapp\model\BayesImWrapper.cs" />
+    <Compile Include="tetradapp\model\BayesPmParams.cs" />
+    <Compile Include="tetradapp\model\BayesPmWrapper.cs" />
+    <Compile Include="tetradapp\model\BayesSimParams.cs" />
+    <Compile Include="tetradapp\model\BayesUpdaterClassifierWrapper.cs" />
+    <Compile Include="tetradapp\model\BooleanGlassGeneIm.cs" />
+    <Compile Include="tetradapp\model\BooleanGlassGenePm.cs" />
+    <Compile Include="tetradapp\model\BootstrapSamplerParams.cs" />
+    <Compile Include="tetradapp\model\BootstrapSamplerWrapper.cs" />
+    <Compile Include="tetradapp\model\BuildPureClustersIndTestParams.cs" />
+    <Compile Include="tetradapp\model\BuildPureClustersParams.cs" />
+    <Compile Include="tetradapp\model\BuildPureClustersRunner.cs" />
+    <Compile Include="tetradapp\model\CaseExpanderWrapper.cs" />
+    <Compile Include="tetradapp\model\CcdParams.cs" />
+    <Compile Include="tetradapp\model\CcdRunner.cs" />
+    <Compile Include="tetradapp\model\CeFanSearchRunner.cs" />
+    <Compile Include="tetradapp\model\CfciRunner.cs" />
+    <Compile Include="tetradapp\model\ColumnSubsetterWrapper.cs" />
+    <Compile Include="tetradapp\model\CompletedPatternWrapper.cs" />
+    <Compile Include="tetradapp\model\CorrMatrixConverter.cs" />
+    <Compile Include="tetradapp\model\CpcRunner.cs" />
+    <Compile Include="tetradapp\model\CptInvariantUpdaterWrapper.cs" />
+    <Compile Include="tetradapp\model\DagWrapper.cs" />
+    <Compile Include="tetradapp\model\DataWrapper.cs" />
+    <Compile Include="tetradapp\model\DirichletBayesDataWrapper.cs" />
+    <Compile Include="tetradapp\model\DirichletBayesImParams.cs" />
+    <Compile Include="tetradapp\model\DirichletBayesImWrapper.cs" />
+    <Compile Include="tetradapp\model\DirichletEstimatorParams.cs" />
+    <Compile Include="tetradapp\model\DirichletEstimatorWrapper.cs" />
+    <Compile Include="tetradapp\model\DiscDetIndepParams.cs" />
+    <Compile Include="tetradapp\model\DiscreteBootstrapSamplerParams.cs" />
+    <Compile Include="tetradapp\model\DiscreteBootstrapSamplerWrapper.cs" />
+    <Compile Include="tetradapp\model\EditorUtils.cs" />
+    <Compile Include="tetradapp\model\EmBayesEstimatorParams.cs" />
+    <Compile Include="tetradapp\model\EmBayesEstimatorWrapper.cs" />
+    <Compile Include="tetradapp\model\ExtraCategoryInterpolatorWrapper.cs" />
+    <Compile Include="tetradapp\model\FciIndTestParams.cs" />
+    <Compile Include="tetradapp\model\FciParams.cs" />
+    <Compile Include="tetradapp\model\FciRunner.cs" />
+    <Compile Include="tetradapp\model\FciSearchParams.cs" />
+    <Compile Include="tetradapp\model\GaParams.cs" />
+    <Compile Include="tetradapp\model\GenePm.cs" />
+    <Compile Include="tetradapp\model\GeneSimDataWrapper.cs" />
+    <Compile Include="tetradapp\model\GesIndTestParams.cs" />
+    <Compile Include="tetradapp\model\GesParams.cs" />
+    <Compile Include="tetradapp\model\GesRunner.cs" />
+    <Compile Include="tetradapp\model\GraphComparison.cs" />
+    <Compile Include="tetradapp\model\GraphComparisonParams.cs" />
+    <Compile Include="tetradapp\model\GraphIndTestParams.cs" />
+    <Compile Include="tetradapp\model\GraphParams.cs" />
+    <Compile Include="tetradapp\model\GraphSource.cs" />
+    <Compile Include="tetradapp\model\GraphWrapper.cs" />
+    <Compile Include="tetradapp\model\IndTestFactory.cs" />
+    <Compile Include="tetradapp\model\IndTestParams.cs" />
+    <Compile Include="tetradapp\model\IndTestProducer.cs" />
+    <Compile Include="tetradapp\model\KnowledgeEditable.cs" />
+    <Compile Include="tetradapp\model\LagGraphParams.cs" />
+    <Compile Include="tetradapp\model\LagIndTestParams.cs" />
+    <Compile Include="tetradapp\model\LocalOrientationTestRunner.cs" />
+    <Compile Include="tetradapp\model\LogisticRegressionParams.cs" />
+    <Compile Include="tetradapp\model\LogisticRegressionRunner.cs" />
+    <Compile Include="tetradapp\model\MbFanSearchRunner.cs" />
+    <Compile Include="tetradapp\model\MbSearchParams.cs" />
+    <Compile Include="tetradapp\model\MeasurementSimulatorParams.cs" />
+    <Compile Include="tetradapp\model\MimBuildIndTestParams.cs" />
+    <Compile Include="tetradapp\model\MimBuildParams.cs" />
+    <Compile Include="tetradapp\model\MimBuildRunner.cs" />
+    <Compile Include="tetradapp\model\MimIndTestParams.cs" />
+    <Compile Include="tetradapp\model\MimParams.cs" />
+    <Compile Include="tetradapp\model\MimRunner.cs" />
+    <Compile Include="tetradapp\model\MissingDataInjectorParams.cs" />
+    <Compile Include="tetradapp\model\MissingDataInjectorWrapper.cs" />
+    <Compile Include="tetradapp\model\ModeInterpolatorWrapper.cs" />
+    <Compile Include="tetradapp\model\NoteModel.cs" />
+    <Compile Include="tetradapp\model\ParameterSaver.cs" />
+    <Compile Include="tetradapp\model\PcdRunner.cs" />
+    <Compile Include="tetradapp\model\PcdRunner2.cs" />
+    <Compile Include="tetradapp\model\PcIndTestParams.cs" />
+    <Compile Include="tetradapp\model\PcParams.cs" />
+    <Compile Include="tetradapp\model\PcRunner.cs" />
+    <Compile Include="tetradapp\model\PcSearchParams.cs" />
+    <Compile Include="tetradapp\model\PcxRunner.cs" />
+    <Compile Include="tetradapp\model\PredictionRunner.cs" />
+    <Compile Include="tetradapp\model\PurifyIndTestParams.cs" />
+    <Compile Include="tetradapp\model\PurifyParams.cs" />
+    <Compile Include="tetradapp\model\PurifyRunner.cs" />
+    <Compile Include="tetradapp\model\RandomActiveLagGraph.cs" />
+    <Compile Include="tetradapp\model\RegressionParams.cs" />
+    <Compile Include="tetradapp\model\RegressionRunner.cs" />
+    <Compile Include="tetradapp\model\RowSummingExactWrapper.cs" />
+    <Compile Include="tetradapp\model\SearchParams.cs" />
+    <Compile Include="tetradapp\model\SemDataParams.cs" />
+    <Compile Include="tetradapp\model\SemDataWrapper.cs" />
+    <Compile Include="tetradapp\model\SemEstimatorWrapper.cs" />
+    <Compile Include="tetradapp\model\SemGraphWrapper.cs" />
+    <Compile Include="tetradapp\model\SemImWrapper.cs" />
+    <Compile Include="tetradapp\model\SemPmWrapper.cs" />
+    <Compile Include="tetradapp\model\SemSimulationParams.cs" />
+    <Compile Include="tetradapp\model\SemUpdaterWrapper.cs" />
+    <Compile Include="tetradapp\model\SessionAppModule.cs" />
+    <Compile Include="tetradapp\model\SessionNodeWrapper.cs" />
+    <Compile Include="tetradapp\model\SessionWrapper.cs" />
+    <Compile Include="tetradapp\model\SimpleSimulationProperties.cs" />
+    <Compile Include="tetradapp\model\StructEmBayesSearchParams.cs" />
+    <Compile Include="tetradapp\model\StructEmBayesSearchRunner.cs" />
+    <Compile Include="tetradapp\model\TestDataWrapper.cs" />
+    <Compile Include="tetradapp\model\TestLogisticRegressionRunner.cs" />
+    <Compile Include="tetradapp\model\TetradMetadata.cs" />
+    <Compile Include="tetradapp\model\UnlistedSessionModel.cs" />
+    <Compile Include="tetradapp\model\WrapperContinuousColumn.cs" />
+    <Compile Include="tetradapp\model\YeastPcCcdSearchWrapper.cs" />
+    <Compile Include="tetradapp\Tetrad.cs" />
+    <Compile Include="tetradapp\TetradCmd.cs" />
+    <Compile Include="tetradapp\util\CopyLayoutAction.cs" />
+    <Compile Include="tetradapp\util\DesktopControllable.cs" />
+    <Compile Include="tetradapp\util\DesktopController.cs" />
+    <Compile Include="tetradapp\util\DoubleTextField.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\util\EditorWindowIndirectRef.cs" />
+    <Compile Include="tetradapp\util\FileLoadingUtils.cs" />
+    <Compile Include="tetradapp\util\GraphEditorUtils.cs" />
+    <Compile Include="tetradapp\util\ImageUtils.cs" />
+    <Compile Include="tetradapp\util\InternalClipboard.cs" />
+    <Compile Include="tetradapp\util\IntTextField.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\util\LayoutEditable.cs" />
+    <Compile Include="tetradapp\util\LayoutMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\util\LayoutSelection.cs" />
+    <Compile Include="tetradapp\util\LicenseUtils.cs" />
+    <Compile Include="tetradapp\util\PasteLayoutAction.cs" />
+    <Compile Include="tetradapp\util\SessionEditorIndirectRef.cs" />
+    <Compile Include="tetradapp\util\SessionWrapperIndirectRef.cs" />
+    <Compile Include="tetradapp\util\SortingComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\util\SplashScreen.cs" />
+    <Compile Include="tetradapp\util\StringTextField.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\util\TestVersion.cs" />
+    <Compile Include="tetradapp\util\TetradMetadataIndirectRef.cs" />
+    <Compile Include="tetradapp\util\TetradSerializableUtils.cs" />
+    <Compile Include="tetradapp\util\TextAreaFifo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\util\Version.cs" />
+    <Compile Include="tetradapp\util\WatchedProcess.cs" />
+    <Compile Include="tetradapp\workbench\AbstractWorkbench.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\workbench\DisplayComp.cs" />
+    <Compile Include="tetradapp\workbench\DisplayEdge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\workbench\DisplayNode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\workbench\DisplayNodeUtils.cs" />
+    <Compile Include="tetradapp\workbench\ErrorDisplayComp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\workbench\GraphNodeError.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\workbench\GraphNodeLatent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\workbench\GraphNodeMeasured.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\workbench\GraphWorkbench.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\workbench\IDisplayEdge.cs" />
+    <Compile Include="tetradapp\workbench\LatentDisplayComp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\workbench\MeasuredDisplayComp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\workbench\PointPair.cs" />
+    <Compile Include="tetradapp\workbench\Rubberband.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tetradapp\workbench\TestDisplayNode.cs" />
+    <Compile Include="tetradapp\workbench\TestGraphWorkbench.cs" />
+    <Compile Include="tetradapp\workbench\WorkbenchModel.cs" />
+    <Compile Include="tetrad\bayes\ApproximateUpdater.cs" />
+    <Compile Include="tetrad\bayes\BayesIm.cs" />
+    <Compile Include="tetrad\bayes\BayesImDistanceFunction.cs" />
+    <Compile Include="tetrad\bayes\BayesImFactory.cs" />
+    <Compile Include="tetrad\bayes\BayesImProbs.cs" />
+    <Compile Include="tetrad\bayes\BayesPm.cs" />
+    <Compile Include="tetrad\bayes\BayesProperties.cs" />
+    <Compile Include="tetrad\bayes\BayesUpdater.cs" />
+    <Compile Include="tetrad\bayes\BayesUtils.cs" />
+    <Compile Include="tetrad\bayes\BayesXmlParser.cs" />
+    <Compile Include="tetrad\bayes\BayesXmlRenderer.cs" />
+    <Compile Include="tetrad\bayes\BdeMetric.cs" />
+    <Compile Include="tetrad\bayes\BdeMetricCache.cs" />
+    <Compile Include="tetrad\bayes\CellTableProbs.cs" />
+    <Compile Include="tetrad\bayes\CptInvariantMarginalCalculator.cs" />
+    <Compile Include="tetrad\bayes\CptInvariantUpdater.cs" />
+    <Compile Include="tetrad\bayes\DataSetProbs.cs" />
+    <Compile Include="tetrad\bayes\DirichletBayesIm.cs" />
+    <Compile Include="tetrad\bayes\DirichletDataSetProbs.cs" />
+    <Compile Include="tetrad\bayes\DirichletEstimator.cs" />
+    <Compile Include="tetrad\bayes\DiscreteProbs.cs" />
+    <Compile Include="tetrad\bayes\EmBayesEstimator.cs" />
+    <Compile Include="tetrad\bayes\Evidence.cs" />
+    <Compile Include="tetrad\bayes\ExtraCategoryInterpolator.cs" />
+    <Compile Include="tetrad\bayes\FactoredBayesStructuralEM.cs" />
+    <Compile Include="tetrad\bayes\IntAveDataSetProbs.cs" />
+    <Compile Include="tetrad\bayes\IntMaxDataSetProbs.cs" />
+    <Compile Include="tetrad\bayes\ManipulatingBayesUpdater.cs" />
+    <Compile Include="tetrad\bayes\Manipulation.cs" />
+    <Compile Include="tetrad\bayes\MlBayesEstimator.cs" />
+    <Compile Include="tetrad\bayes\MlBayesIm.cs" />
+    <Compile Include="tetrad\bayes\ModeInterpolator.cs" />
+    <Compile Include="tetrad\bayes\ModelGenerator.cs" />
+    <Compile Include="tetrad\bayes\OnTheFlyMarginalCalculator.cs" />
+    <Compile Include="tetrad\bayes\Proposition.cs" />
+    <Compile Include="tetrad\bayes\RowSummingExactUpdater.cs" />
+    <Compile Include="tetrad\bayes\StoredCellProbs.cs" />
+    <Compile Include="tetrad\bayes\TestBayesBicScorer.cs" />
+    <Compile Include="tetrad\bayes\TestBayesIm.cs" />
+    <Compile Include="tetrad\bayes\TestBayesPm.cs" />
+    <Compile Include="tetrad\bayes\TestBayesXml.cs" />
+    <Compile Include="tetrad\bayes\TestBDeMetric.cs" />
+    <Compile Include="tetrad\bayes\TestBDeMetricCache.cs" />
+    <Compile Include="tetrad\bayes\TestCellProbabilities.cs" />
+    <Compile Include="tetrad\bayes\TestCptInvariantUpdater.cs" />
+    <Compile Include="tetrad\bayes\TestDataSetCellProbs.cs" />
+    <Compile Include="tetrad\bayes\TestDiscreteBootstrap.cs" />
+    <Compile Include="tetrad\bayes\TestDiscreteProbs.cs" />
+    <Compile Include="tetrad\bayes\TestEmBayesEstimator.cs" />
+    <Compile Include="tetrad\bayes\TestEvidence.cs" />
+    <Compile Include="tetrad\bayes\TestFactoredBayesSemMd.cs" />
+    <Compile Include="tetrad\bayes\TestFactoredScoreCacheMd.cs" />
+    <Compile Include="tetrad\bayes\TestModelGenerator.cs" />
+    <Compile Include="tetrad\bayes\TestProposition.cs" />
+    <Compile Include="tetrad\bayes\TestRowSummingUpdater.cs" />
+    <Compile Include="tetrad\bayes\TestUpdatedBayesIm.cs" />
+    <Compile Include="tetrad\bayes\TestUpdaterJointMarginal.cs" />
+    <Compile Include="tetrad\bayes\UpdatedBayesIm.cs" />
+    <Compile Include="tetrad\data\AbstractVariable.cs" />
+    <Compile Include="tetrad\data\BootstrapSampler.cs" />
+    <Compile Include="tetrad\data\CaseExpander.cs" />
+    <Compile Include="tetrad\data\CellTable.cs" />
+    <Compile Include="tetrad\data\Clusters.cs" />
+    <Compile Include="tetrad\data\ColtDataSet.cs" />
+    <Compile Include="tetrad\data\Column.cs" />
+    <Compile Include="tetrad\data\ContinuousColumn.cs" />
+    <Compile Include="tetrad\data\ContinuousDataSet.cs" />
+    <Compile Include="tetrad\data\ContinuousDiscretizationSpec.cs" />
+    <Compile Include="tetrad\data\ContinuousVariable.cs" />
+    <Compile Include="tetrad\data\CorrelationMatrix.cs" />
+    <Compile Include="tetrad\data\CountColumn.cs" />
+    <Compile Include="tetrad\data\CountVariable.cs" />
+    <Compile Include="tetrad\data\CovarianceMatrix.cs" />
+    <Compile Include="tetrad\data\DataFilter.cs" />
+    <Compile Include="tetrad\data\DataLoaders.cs" />
+    <Compile Include="tetrad\data\DataModel.cs" />
+    <Compile Include="tetrad\data\DataModelList.cs" />
+    <Compile Include="tetrad\data\DataSavers.cs" />
+    <Compile Include="tetrad\data\DataSet.cs" />
+    <Compile Include="tetrad\data\DataUtils.cs" />
+    <Compile Include="tetrad\data\DelimiterType.cs" />
+    <Compile Include="tetrad\data\DiscreteColumn.cs" />
+    <Compile Include="tetrad\data\DiscreteDataSet.cs" />
+    <Compile Include="tetrad\data\DiscreteDiscretizationSpec.cs" />
+    <Compile Include="tetrad\data\DiscreteVariable.cs" />
+    <Compile Include="tetrad\data\DiscreteVariableType.cs" />
+    <Compile Include="tetrad\data\Discretizer.cs" />
+    <Compile Include="tetrad\data\Knowledge.cs" />
+    <Compile Include="tetrad\data\KnowledgeEdge.cs" />
+    <Compile Include="tetrad\data\KnowledgeTransferable.cs" />
+    <Compile Include="tetrad\data\RandomSampler.cs" />
+    <Compile Include="tetrad\data\RectangularDataSet.cs" />
+    <Compile Include="tetrad\data\RegexTokenizer.cs" />
+    <Compile Include="tetrad\data\SplitCasesSpec.cs" />
+    <Compile Include="tetrad\data\TestCellTable.cs" />
+    <Compile Include="tetrad\data\TestCovarianceMatrix.cs" />
+    <Compile Include="tetrad\data\TestDataLoaders.cs" />
+    <Compile Include="tetrad\data\TestDelimiterTokenizer.cs" />
+    <Compile Include="tetrad\data\TestDelimiterType.cs" />
+    <Compile Include="tetrad\data\TestDiscreteColumn.cs" />
+    <Compile Include="tetrad\data\TestDiscretizer.cs" />
+    <Compile Include="tetrad\data\TestKnowledge.cs" />
+    <Compile Include="tetrad\data\TestRectangularDataSet.cs" />
+    <Compile Include="tetrad\data\TimeSeriesData.cs" />
+    <Compile Include="tetrad\data\Variable.cs" />
+    <Compile Include="tetrad\data\VariableSource.cs" />
+    <Compile Include="tetrad\gene\graph\ActiveLagGraph.cs" />
+    <Compile Include="tetrad\gene\graph\DisplayNameHandler.cs" />
+    <Compile Include="tetrad\gene\graph\ManualActiveLagGraph.cs" />
+    <Compile Include="tetrad\gene\graph\ManualLagGraph.cs" />
+    <Compile Include="tetrad\gene\graph\ManualLagGraphParams.cs" />
+    <Compile Include="tetrad\gene\graph\StoredLagGraphParams.cs" />
+    <Compile Include="tetrad\gene\history\BasalInitializer.cs" />
+    <Compile Include="tetrad\gene\history\BasicLagGraph.cs" />
+    <Compile Include="tetrad\gene\history\BooleanFunction.cs" />
+    <Compile Include="tetrad\gene\history\BooleanGlassFunction.cs" />
+    <Compile Include="tetrad\gene\history\DishModel.cs" />
+    <Compile Include="tetrad\gene\history\GeneHistory.cs" />
+    <Compile Include="tetrad\gene\history\GraphInitializer.cs" />
+    <Compile Include="tetrad\gene\history\GraphRandomizer.cs" />
+    <Compile Include="tetrad\gene\history\IndexedConnectivity.cs" />
+    <Compile Include="tetrad\gene\history\IndexedLagGraph.cs" />
+    <Compile Include="tetrad\gene\history\IndexedParent.cs" />
+    <Compile Include="tetrad\gene\history\Initializer.cs" />
+    <Compile Include="tetrad\gene\history\LaggedEdge.cs" />
+    <Compile Include="tetrad\gene\history\LaggedFactor.cs" />
+    <Compile Include="tetrad\gene\history\LagGraph.cs" />
+    <Compile Include="tetrad\gene\history\LinearFunction.cs" />
+    <Compile Include="tetrad\gene\history\Polynomial.cs" />
+    <Compile Include="tetrad\gene\history\PolynomialFunction.cs" />
+    <Compile Include="tetrad\gene\history\PolynomialTerm.cs" />
+    <Compile Include="tetrad\gene\history\PreviousStepOnly.cs" />
+    <Compile Include="tetrad\gene\history\RandomDistribution.cs" />
+    <Compile Include="tetrad\gene\history\SimpleRandomizer.cs" />
+    <Compile Include="tetrad\gene\history\TestBooleanFunction.cs" />
+    <Compile Include="tetrad\gene\history\TestIndexedConnectivity.cs" />
+    <Compile Include="tetrad\gene\history\TestIndexedLagGraph.cs" />
+    <Compile Include="tetrad\gene\history\TestPolynomial.cs" />
+    <Compile Include="tetrad\gene\history\TestPolynomialTerm.cs" />
+    <Compile Include="tetrad\gene\history\TestSimpleRandomizer.cs" />
+    <Compile Include="tetrad\gene\history\UpdateFunction.cs" />
+    <Compile Include="tetrad\gene\simexp\LinearSimExp1.cs" />
+    <Compile Include="tetrad\gene\simulation\MeasurementSimulator.cs" />
+    <Compile Include="tetrad\gene\simulation\TestMeasurementSimulator.cs" />
+    <Compile Include="tetrad\gene\util\HandleyConvert.cs" />
+    <Compile Include="tetrad\graph\AncestralGraph.cs" />
+    <Compile Include="tetrad\graph\AtMostOneEdgePerPair.cs" />
+    <Compile Include="tetrad\graph\BidirectedToExogenous.cs" />
+    <Compile Include="tetrad\graph\Dag.cs" />
+    <Compile Include="tetrad\graph\DirectedBidirectedOnly.cs" />
+    <Compile Include="tetrad\graph\DirectedEdgesOnly.cs" />
+    <Compile Include="tetrad\graph\DirectedGraph.cs" />
+    <Compile Include="tetrad\graph\DirectedUndirectedOnly.cs" />
+    <Compile Include="tetrad\graph\Edge.cs" />
+    <Compile Include="tetrad\graph\EdgeListGraph.cs" />
+    <Compile Include="tetrad\graph\Edges.cs" />
+    <Compile Include="tetrad\graph\Endpoint.cs" />
+    <Compile Include="tetrad\graph\EndpointMatrixGraph.cs" />
+    <Compile Include="tetrad\graph\FruchtermanReingoldLayout.cs" />
+    <Compile Include="tetrad\graph\Graph.cs" />
+    <Compile Include="tetrad\graph\GraphConstraint.cs" />
+    <Compile Include="tetrad\graph\GraphConverter.cs" />
+    <Compile Include="tetrad\graph\GraphNode.cs" />
+    <Compile Include="tetrad\graph\GraphUtils.cs" />
+    <Compile Include="tetrad\graph\InArrowImpliesNonancestor.cs" />
+    <Compile Include="tetrad\graph\IndependenceFact.cs" />
+    <Compile Include="tetrad\graph\KamadaKawaiLayout.cs" />
+    <Compile Include="tetrad\graph\LayeredDrawing.cs" />
+    <Compile Include="tetrad\graph\Mag.cs" />
+    <Compile Include="tetrad\graph\MeasuredLatentOnly.cs" />
+    <Compile Include="tetrad\graph\MixedGraph.cs" />
+    <Compile Include="tetrad\graph\Node.cs" />
+    <Compile Include="tetrad\graph\NodeType.cs" />
+    <Compile Include="tetrad\graph\NoEdgeIntoUndirectedEndpoint.cs" />
+    <Compile Include="tetrad\graph\NoEdgesIntoError.cs" />
+    <Compile Include="tetrad\graph\NoEdgesToSelf.cs" />
+    <Compile Include="tetrad\graph\NoHalfdirectedEdges.cs" />
+    <Compile Include="tetrad\graph\Pag.cs" />
+    <Compile Include="tetrad\graph\Pattern.cs" />
+    <Compile Include="tetrad\graph\SemGraph.cs" />
+    <Compile Include="tetrad\graph\TestCollisions.cs" />
+    <Compile Include="tetrad\graph\TestDag.cs" />
+    <Compile Include="tetrad\graph\TestEdgeListGraph.cs" />
+    <Compile Include="tetrad\graph\TestEndpointMatrixGraph.cs" />
+    <Compile Include="tetrad\graph\TestFruchtermanReingoldLayout.cs" />
+    <Compile Include="tetrad\graph\TestGraph.cs" />
+    <Compile Include="tetrad\graph\TestGraphUtils.cs" />
+    <Compile Include="tetrad\graph\TestKamadaKawaiLayout.cs" />
+    <Compile Include="tetrad\graph\TestSemGraph.cs" />
+    <Compile Include="tetrad\graph\TestUniformGraphGenerator.cs" />
+    <Compile Include="tetrad\graph\Triple.cs" />
+    <Compile Include="tetrad\graph\Underline.cs" />
+    <Compile Include="tetrad\graph\UniformGraphGenerator.cs" />
+    <Compile Include="tetrad\graph\UniformGraphGenerator2.cs" />
+    <Compile Include="tetrad\manip\experimental_setup\ExperimentalSetup.cs" />
+    <Compile Include="tetrad\manip\experimental_setup\ExperimentalSetupVariable.cs" />
+    <Compile Include="tetrad\manip\experimental_setup\ExperimentalSetupXml.cs" />
+    <Compile Include="tetrad\manip\experimental_setup\TestExperimentalSetup.cs" />
+    <Compile Include="tetrad\manip\experimental_setup\TestExperimentalSetupVariablesStudied.cs" />
+    <Compile Include="tetrad\manip\experimental_setup\VariableManipulation.cs" />
+    <Compile Include="tetrad\manip\experimental_setup\VariablesStudied.cs" />
+    <Compile Include="tetrad\manip\manipulated_graph\AbstractManipulatedGraph.cs" />
+    <Compile Include="tetrad\manip\manipulated_graph\EdgeManipulation.cs" />
+    <Compile Include="tetrad\manip\manipulated_graph\GuessedManipulatedGraph.cs" />
+    <Compile Include="tetrad\manip\manipulated_graph\ManipulatedEdge.cs" />
+    <Compile Include="tetrad\manip\manipulated_graph\ManipulatedGraph.cs" />
+    <Compile Include="tetrad\manip\manipulated_graph\TestGuessedManipulatedGraph.cs" />
+    <Compile Include="tetrad\manip\manipulated_graph\TestManipulatedGraph.cs" />
+    <Compile Include="tetrad\manip\population\CorrectManipulatedGraphBayesIm.cs" />
+    <Compile Include="tetrad\manip\population\CorrectManipulatedGraphSemIm.cs" />
+    <Compile Include="tetrad\manip\population\JointDistribution.cs" />
+    <Compile Include="tetrad\manip\population\Population.cs" />
+    <Compile Include="tetrad\manip\population\TestPopulation.cs" />
+    <Compile Include="tetrad\manip\sample\BayesSample.cs" />
+    <Compile Include="tetrad\manip\sample\Sample.cs" />
+    <Compile Include="tetrad\manip\sample\SemSample.cs" />
+    <Compile Include="tetrad\manip\sample\TestSample.cs" />
+    <Compile Include="tetrad\model\Params.cs" />
+    <Compile Include="tetrad\predict\ManipulatedVariable.cs" />
+    <Compile Include="tetrad\predict\OrderingGenerator.cs" />
+    <Compile Include="tetrad\predict\Prediction.cs" />
+    <Compile Include="tetrad\predict\TestOrdGen.cs" />
+    <Compile Include="tetrad\search\AddAdjacencies.cs" />
+    <Compile Include="tetrad\search\BayesUpdaterClassifier.cs" />
+    <Compile Include="tetrad\search\BinaryTetradTest.cs" />
+    <Compile Include="tetrad\search\BuildPureClusters.cs" />
+    <Compile Include="tetrad\search\CcdSearch.cs" />
+    <Compile Include="tetrad\search\CeFanSearch.cs" />
+    <Compile Include="tetrad\search\CeFanSearchSepset.cs" />
+    <Compile Include="tetrad\search\Cfci.cs" />
+    <Compile Include="tetrad\search\ChiSquareTest.cs" />
+    <Compile Include="tetrad\search\ContinuousTetradTest.cs" />
+    <Compile Include="tetrad\search\Cpc.cs" />
+    <Compile Include="tetrad\search\DiscreteClassifier.cs" />
+    <Compile Include="tetrad\search\DiscreteTetradTest.cs" />
+    <Compile Include="tetrad\search\ExploreCpcReport.cs" />
+    <Compile Include="tetrad\search\FanSearch.cs" />
+    <Compile Include="tetrad\search\FastAdjacencyDeterministic.cs" />
+    <Compile Include="tetrad\search\FastAdjacencySearch.cs" />
+    <Compile Include="tetrad\search\FastAdjacencySearchLo.cs" />
+    <Compile Include="tetrad\search\FciDsepLegalPairs.cs" />
+    <Compile Include="tetrad\search\FciDsepLegalPairs2.cs" />
+    <Compile Include="tetrad\search\FciSearch.cs" />
+    <Compile Include="tetrad\search\GesMbFilter.cs" />
+    <Compile Include="tetrad\search\GesSearch.cs" />
+    <Compile Include="tetrad\search\GraphSearch.cs" />
+    <Compile Include="tetrad\search\GrowShrink.cs" />
+    <Compile Include="tetrad\search\GSquareTest.cs" />
+    <Compile Include="tetrad\search\HitonClassifier.cs" />
+    <Compile Include="tetrad\search\HitonSearch.cs" />
+    <Compile Include="tetrad\search\Iamb.cs" />
+    <Compile Include="tetrad\search\IndependenceTest.cs" />
+    <Compile Include="tetrad\search\IndTestChiSquare.cs" />
+    <Compile Include="tetrad\search\IndTestCramerT.cs" />
+    <Compile Include="tetrad\search\IndTestFisherZ.cs" />
+    <Compile Include="tetrad\search\IndTestFisherZD.cs" />
+    <Compile Include="tetrad\search\IndTestGraph.cs" />
+    <Compile Include="tetrad\search\IndTestGSquare.cs" />
+    <Compile Include="tetrad\search\IndTestLinearRegression.cs" />
+    <Compile Include="tetrad\search\IndTestMimBuild.cs" />
+    <Compile Include="tetrad\search\IndTestTimeSeries.cs" />
+    <Compile Include="tetrad\search\IndTestType.cs" />
+    <Compile Include="tetrad\search\InterIamb.cs" />
+    <Compile Include="tetrad\search\IonSearch.cs" />
+    <Compile Include="tetrad\search\LegalPairs.cs" />
+    <Compile Include="tetrad\search\LocalScoreCache.cs" />
+    <Compile Include="tetrad\search\LogisticRegression.cs" />
+    <Compile Include="tetrad\search\MarkovBlanketSearch.cs" />
+    <Compile Include="tetrad\search\MbFanSearch.cs" />
+    <Compile Include="tetrad\search\MbFanSearchClassifier.cs" />
+    <Compile Include="tetrad\search\MbUtils.cs" />
+    <Compile Include="tetrad\search\MeekRules.cs" />
+    <Compile Include="tetrad\search\MeekRulesCpc.cs" />
+    <Compile Include="tetrad\search\MimAdjacencySearch.cs" />
+    <Compile Include="tetrad\search\MimBuild.cs" />
+    <Compile Include="tetrad\search\MimUtils.cs" />
+    <Compile Include="tetrad\search\MmpcSearch.cs" />
+    <Compile Include="tetrad\search\PagUtils.cs" />
+    <Compile Include="tetrad\search\PatternToDagSearch.cs" />
+    <Compile Include="tetrad\search\PcdSearch.cs" />
+    <Compile Include="tetrad\search\PcSearch.cs" />
+    <Compile Include="tetrad\search\PcSearchRsch.cs" />
+    <Compile Include="tetrad\search\PcxClassifier.cs" />
+    <Compile Include="tetrad\search\PcxRocScorer.cs" />
+    <Compile Include="tetrad\search\PcxSearch.cs" />
+    <Compile Include="tetrad\search\PopulationTetradTest.cs" />
+    <Compile Include="tetrad\search\PossibleDSepSearch.cs" />
+    <Compile Include="tetrad\search\PossibleDSepSearch2.cs" />
+    <Compile Include="tetrad\search\PossibleDSepSearch3.cs" />
+    <Compile Include="tetrad\search\Purify.cs" />
+    <Compile Include="tetrad\search\Regression.cs" />
+    <Compile Include="tetrad\search\RegressionPlane.cs" />
+    <Compile Include="tetrad\search\SearchGraphUtils.cs" />
+    <Compile Include="tetrad\search\SearchLogUtils.cs" />
+    <Compile Include="tetrad\search\SepsetMap.cs" />
+    <Compile Include="tetrad\search\TestBuildPureClusters.cs" />
+    <Compile Include="tetrad\search\TestCcdSearch.cs" />
+    <Compile Include="tetrad\search\TestCpc.cs" />
+    <Compile Include="tetrad\search\TestFciSearch.cs" />
+    <Compile Include="tetrad\search\TestGesSearch.cs" />
+    <Compile Include="tetrad\search\TestGraphConverter.cs" />
+    <Compile Include="tetrad\search\TestHiton.cs" />
+    <Compile Include="tetrad\search\TestIndTestFisherZD.cs" />
+    <Compile Include="tetrad\search\TestIndTestGSquare.cs" />
+    <Compile Include="tetrad\search\TestIndTestTimeSeries.cs" />
+    <Compile Include="tetrad\search\TestMarkovBlanketSearches.cs" />
+    <Compile Include="tetrad\search\TestMbCalculationMethods.cs" />
+    <Compile Include="tetrad\search\TestMbClassify.cs" />
+    <Compile Include="tetrad\search\TestMbClassify2.cs" />
+    <Compile Include="tetrad\search\TestMbFanSearch.cs" />
+    <Compile Include="tetrad\search\TestMbfReport.cs" />
+    <Compile Include="tetrad\search\TestPatternToDag.cs" />
+    <Compile Include="tetrad\search\TestPcdSearch.cs" />
+    <Compile Include="tetrad\search\TestPcSearch.cs" />
+    <Compile Include="tetrad\search\TestPcxClassify.cs" />
+    <Compile Include="tetrad\search\TestPcxSearch.cs" />
+    <Compile Include="tetrad\search\TestRegression.cs" />
+    <Compile Include="tetrad\search\TestVarianceTiebreaking.cs" />
+    <Compile Include="tetrad\search\test\GibbsEstimatorTester.cs" />
+    <Compile Include="tetrad\search\test\HitonClassifyTester.cs" />
+    <Compile Include="tetrad\search\test\HitonTester.cs" />
+    <Compile Include="tetrad\search\test\IonTester.cs" />
+    <Compile Include="tetrad\search\test\LogisticRegressionTester.cs" />
+    <Compile Include="tetrad\search\test\MbFanSearchTester.cs" />
+    <Compile Include="tetrad\search\test\PcxClassifyTester.cs" />
+    <Compile Include="tetrad\search\test\PcxTester.cs" />
+    <Compile Include="tetrad\search\test\PcxTesterProc1.cs" />
+    <Compile Include="tetrad\search\test\RegressionRunnerTester.cs" />
+    <Compile Include="tetrad\search\test\SemIndTestPower.cs" />
+    <Compile Include="tetrad\search\TetradTest.cs" />
+    <Compile Include="tetrad\sem\LargeSemSimulator.cs" />
+    <Compile Include="tetrad\sem\Mapping.cs" />
+    <Compile Include="tetrad\sem\MimBuildEstimator.cs" />
+    <Compile Include="tetrad\sem\ParamComparison.cs" />
+    <Compile Include="tetrad\sem\ParamConstraint.cs" />
+    <Compile Include="tetrad\sem\ParamConstraintType.cs" />
+    <Compile Include="tetrad\sem\Parameter.cs" />
+    <Compile Include="tetrad\sem\ParameterPair.cs" />
+    <Compile Include="tetrad\sem\ParamType.cs" />
+    <Compile Include="tetrad\sem\SemEstimator.cs" />
+    <Compile Include="tetrad\sem\SemEstimatorGibbs.cs" />
+    <Compile Include="tetrad\sem\SemEstimatorGibbsParams.cs" />
+    <Compile Include="tetrad\sem\SemEvidence.cs" />
+    <Compile Include="tetrad\sem\SemIm.cs" />
+    <Compile Include="tetrad\sem\SemManipulation.cs" />
+    <Compile Include="tetrad\sem\SemOptimizer.cs" />
+    <Compile Include="tetrad\sem\SemOptimizerEm.cs" />
+    <Compile Include="tetrad\sem\SemOptimizerNrPowell.cs" />
+    <Compile Include="tetrad\sem\SemOptimizerPalCds.cs" />
+    <Compile Include="tetrad\sem\SemOptimizerRegression.cs" />
+    <Compile Include="tetrad\sem\SemOptimizerUncmin.cs" />
+    <Compile Include="tetrad\sem\SemPm.cs" />
+    <Compile Include="tetrad\sem\SemProposition.cs" />
+    <Compile Include="tetrad\sem\SemStdErrorEstimator.cs" />
+    <Compile Include="tetrad\sem\SemUpdater.cs" />
+    <Compile Include="tetrad\sem\TestLargeSemSimulator.cs" />
+    <Compile Include="tetrad\sem\TestSem.cs" />
+    <Compile Include="tetrad\sem\TestSemEstimator.cs" />
+    <Compile Include="tetrad\sem\TestSemEvidence.cs" />
+    <Compile Include="tetrad\sem\TestSemIm.cs" />
+    <Compile Include="tetrad\sem\TestSemManipulation.cs" />
+    <Compile Include="tetrad\sem\TestSemProposition.cs" />
+    <Compile Include="tetrad\sem\TestSemUpdater.cs" />
+    <Compile Include="tetrad\sem\TestSemVarMeans.cs" />
+    <Compile Include="tetrad\sem\Tsls.cs" />
+    <Compile Include="tetrad\session\CouldNotCreateModelException.cs" />
+    <Compile Include="tetrad\session\DelegatesEditing.cs" />
+    <Compile Include="tetrad\session\ExecutionRestarter.cs" />
+    <Compile Include="tetrad\session\ModificationRegistery.cs" />
+    <Compile Include="tetrad\session\ParamsResettable.cs" />
+    <Compile Include="tetrad\session\Session.cs" />
+    <Compile Include="tetrad\session\SessionAdapter.cs" />
+    <Compile Include="tetrad\session\SessionEvent.cs" />
+    <Compile Include="tetrad\session\SessionListener.cs" />
+    <Compile Include="tetrad\session\SessionModel.cs" />
+    <Compile Include="tetrad\session\SessionNode.cs" />
+    <Compile Include="tetrad\session\SessionSupport.cs" />
+    <Compile Include="tetrad\session\SimulationStudy.cs" />
+    <Compile Include="tetrad\session\TestSession.cs" />
+    <Compile Include="tetrad\session\TestSessionEvent.cs" />
+    <Compile Include="tetrad\session\TestSessionNode.cs" />
+    <Compile Include="tetrad\session\TestSessionSupport.cs" />
+    <Compile Include="tetrad\session\TestSimulationStudy.cs" />
+    <Compile Include="tetrad\session\Type1.cs" />
+    <Compile Include="tetrad\session\Type10.cs" />
+    <Compile Include="tetrad\session\Type11.cs" />
+    <Compile Include="tetrad\session\Type12.cs" />
+    <Compile Include="tetrad\session\Type2.cs" />
+    <Compile Include="tetrad\session\Type3.cs" />
+    <Compile Include="tetrad\session\Type4.cs" />
+    <Compile Include="tetrad\session\Type5.cs" />
+    <Compile Include="tetrad\session\Type6.cs" />
+    <Compile Include="tetrad\session\Type7.cs" />
+    <Compile Include="tetrad\session\Type8.cs" />
+    <Compile Include="tetrad\session\Type9.cs" />
+    <Compile Include="tetrad\test\TestDataLoadersRoundtrip.cs" />
+    <Compile Include="tetrad\util\ArrUtils.cs" />
+    <Compile Include="tetrad\util\ChoiceGenerator.cs" />
+    <Compile Include="tetrad\util\CombinationIterator.cs" />
+    <Compile Include="tetrad\util\CutoffFinder.cs" />
+    <Compile Include="tetrad\util\Distribution.cs" />
+    <Compile Include="tetrad\util\Executable.cs" />
+    <Compile Include="tetrad\util\FdrTest.cs" />
+    <Compile Include="tetrad\util\Function.cs" />
+    <Compile Include="tetrad\util\IndexedMatrix.cs" />
+    <Compile Include="tetrad\util\Integrator.cs" />
+    <Compile Include="tetrad\util\JOptionUtils.cs" />
+    <Compile Include="tetrad\util\LogUtils.cs" />
+    <Compile Include="tetrad\util\MatrixUtils.cs" />
+    <Compile Include="tetrad\util\MultiDimIntTable.cs" />
+    <Compile Include="tetrad\util\NamingProtocol.cs" />
+    <Compile Include="tetrad\util\NodeArrangement.cs" />
+    <Compile Include="tetrad\util\NormalDistribution.cs" />
+    <Compile Include="tetrad\util\NormalPdf.cs" />
+    <Compile Include="tetrad\util\PartialCorrelationPdf.cs" />
+    <Compile Include="tetrad\util\PersistentRandomUtil.cs" />
+    <Compile Include="tetrad\util\Point.cs" />
+    <Compile Include="tetrad\util\ProbUtils.cs" />
+    <Compile Include="tetrad\util\RandomUtil.cs" />
+    <Compile Include="tetrad\util\RocCalculator.cs" />
+    <Compile Include="tetrad\util\SeededRandomUtil.cs" />
+    <Compile Include="tetrad\util\SimpleOutHandler.cs" />
+    <Compile Include="tetrad\util\SingleValue.cs" />
+    <Compile Include="tetrad\util\SplitDistribution.cs" />
+    <Compile Include="tetrad\util\SplitDistributionSpecial.cs" />
+    <Compile Include="tetrad\util\StatUtils.cs" />
+    <Compile Include="tetrad\util\SubsetGenerator.cs" />
+    <Compile Include="tetrad\util\TestChoiceGenerator.cs" />
+    <Compile Include="tetrad\util\TestCombinationIterator.cs" />
+    <Compile Include="tetrad\util\TestIntegrator.cs" />
+    <Compile Include="tetrad\util\TestMatrixUtils.cs" />
+    <Compile Include="tetrad\util\TestMultiDimIntTable.cs" />
+    <Compile Include="tetrad\util\TestNodeArrangement.cs" />
+    <Compile Include="tetrad\util\TestPartialCorrelationPdf.cs" />
+    <Compile Include="tetrad\util\TestPoint.cs" />
+    <Compile Include="tetrad\util\TetradSerializable.cs" />
+    <Compile Include="tetrad\util\TetradSerializableExcluded.cs" />
+    <Compile Include="tetrad\util\UniformDistribution.cs" />
+    <Compile Include="UpdateVersion.cs" />
+    <Content Include="tetradapp\app\package.html" />
+    <Content Include="tetradapp\app\testtetradmodel.xml" />
+    <Content Include="tetradapp\editor\package.html" />
+    <Content Include="tetradapp\gene\editor\package.html" />
+    <Content Include="tetradapp\overview.html" />
+    <Content Include="tetradapp\package.html" />
+    <Content Include="tetradapp\workbench\package.html" />
+    <Content Include="tetrad\bayes\package.html" />
+    <Content Include="tetrad\data\package.html" />
+    <Content Include="tetrad\gene\graph\package.html" />
+    <Content Include="tetrad\gene\history\package.html" />
+    <Content Include="tetrad\gene\history\package2.html" />
+    <Content Include="tetrad\gene\history\package3.html" />
+    <Content Include="tetrad\gene\simexp\package.html" />
+    <Content Include="tetrad\gene\simulation\package.html" />
+    <Content Include="tetrad\gene\util\package.html" />
+    <Content Include="tetrad\graph\package.html" />
+    <Content Include="tetrad\package.html" />
+    <Content Include="tetrad\search\package.html" />
+    <Content Include="tetrad\search\test\package.html" />
+    <Content Include="tetrad\sem\HowSemIsBeingUsed.txt" />
+    <Content Include="tetrad\sem\package.html" />
+    <Content Include="tetrad\session\package.html" />
+    <Content Include="tetrad\util\package.html" />
+    <None Include="_ConversionReport.htm">
+      <SubType>Preview</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

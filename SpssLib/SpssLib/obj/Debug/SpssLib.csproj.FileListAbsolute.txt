@@ -1,0 +1,5 @@
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\SpssLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\SpssLib\bin\Debug\SpssLib.dll
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\SpssLib\bin\Debug\SpssLib.pdb
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\SpssLib\obj\Debug\SpssLib.dll
+C:\Users\Elmar\Documents\Programmeren\Stats Project\SpssLib\SpssLib\obj\Debug\SpssLib.pdb

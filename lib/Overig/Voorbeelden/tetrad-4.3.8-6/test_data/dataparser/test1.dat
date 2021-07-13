@@ -1,0 +1,21 @@
+// Comment
+// Comment
+
+/variables
+X:Continuous
+Z:3 4 5 6 7 8 9
+
+/data
+X Y Z
+1 2 3
+4 5 6
+7 8 9
+
+/knowledge
+addtemporal
+1 X
+2 Y
+forbiddirect
+Y Z
+requiredirect
+Z Y

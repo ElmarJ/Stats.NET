@@ -1,0 +1,13 @@
+﻿<swpf:AnalysisSetupControl x:Class="Stats.Modules.Interfaces.Analysis.Wpf.LinearRegressionSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:a="clr-namespace:Stats.Modules.Analysis;assembly=Stats.Modules.Analysis"
+    xmlns:swpf="clr-namespace:Stats.Interfaces.Wpf;assembly=Stats.Interfaces.Wpf"
+    Height="300" Width="300">
+    <swpf:AnalysisSetupControl.Resources>
+        <a:LinearRegressionAnalysis x:Key="Analysis" />
+    </swpf:AnalysisSetupControl.Resources>
+    <Grid>
+            
+    </Grid>
+</swpf:AnalysisSetupControl>

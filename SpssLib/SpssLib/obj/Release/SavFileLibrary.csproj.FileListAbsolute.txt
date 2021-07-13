@@ -1,0 +1,5 @@
+C:\Users\Elmar\Documents\Programmeren\VS 2010\SpssFileReader2\SpssInterop\bin\Release\SavFileLibrary.dll
+C:\Users\Elmar\Documents\Programmeren\VS 2010\SpssFileReader2\SpssInterop\bin\Release\SavFileLibrary.pdb
+C:\Users\Elmar\Documents\Programmeren\VS 2010\SpssFileReader2\SpssInterop\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Elmar\Documents\Programmeren\VS 2010\SpssFileReader2\SpssInterop\obj\Release\SavFileLibrary.dll
+C:\Users\Elmar\Documents\Programmeren\VS 2010\SpssFileReader2\SpssInterop\obj\Release\SavFileLibrary.pdb

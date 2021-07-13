@@ -1,0 +1,12 @@
+C:\Users\Elmar\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe.config
+C:\Users\Elmar\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe
+C:\Users\Elmar\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.pdb
+C:\Users\Elmar\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\SavFileLibrary.dll
+C:\Users\Elmar\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\SavFileLibrary.pdb
+C:\Users\Elmar\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Elmar\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form1.resources
+C:\Users\Elmar\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Elmar\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\ResGen.read.1.tlog
+C:\Users\Elmar\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\ResGen.write.1.tlog
+C:\Users\Elmar\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.exe
+C:\Users\Elmar\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.pdb

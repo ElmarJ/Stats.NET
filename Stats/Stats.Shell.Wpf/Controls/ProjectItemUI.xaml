@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="Stats.Shells.Wpf.Controls.ProjectItemUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Stats.Shells.Wpf.Controls"
+             xmlns:w="clr-namespace:Stats.Shells.Wpf"
+             xmlns:converters="clr-namespace:Stats.Shells.Wpf.Converters"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.CommandBindings>
+        <CommandBinding Command="local:Commands.RunAnalysis" CanExecute="RunAnalysisCanExecute" Executed="RunAnalysisExecuted"></CommandBinding>
+    </UserControl.CommandBindings>
+        <UserControl.Resources>
+        <converters:ResultsToFlowDocument x:Key="IResultsToFlowDocument" />
+        <DataTemplate x:Key="defaultTemplate">
+            <Grid>
+                <TextBlock Text="{Binding Name}" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="dataMatrixTemplate" >
+            <local:DataMatrixGrid DataContext="{Binding}" />
+        </DataTemplate>
+        <DataTemplate x:Key="resultsTemplate" >
+            <ContentControl Name="resultFrame" Content="{Binding Path=., Converter={StaticResource IResultsToFlowDocument}}" Background="#FFC9D89B">
+            </ContentControl>
+        </DataTemplate>
+        <DataTemplate x:Key="analysisTemplate" >
+            <StackPanel>
+                <TextBlock Text="Analysis" />
+                <Button CommandParameter="{Binding}" Command="local:Commands.RunAnalysis">Run</Button>
+            </StackPanel>
+        </DataTemplate>
+        <local:ProjectItemUITemplateSelector x:Key="templateSelector" DataMatrixTemplate="{StaticResource dataMatrixTemplate}" DefaultTemplate="{StaticResource defaultTemplate}" ResultsTemplate="{StaticResource resultsTemplate}" AnalysisTemplate="{StaticResource analysisTemplate}"/>
+    </UserControl.Resources>
+    <ContentControl Content="{Binding}" ContentTemplateSelector="{StaticResource templateSelector}" />
+</UserControl>

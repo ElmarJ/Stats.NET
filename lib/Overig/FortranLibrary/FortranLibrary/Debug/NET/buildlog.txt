@@ -1,0 +1,43 @@
+/////////////////////////////////////
+
+Build log for project: FortranLibrary
+Configuration: Debug/.NET
+Date: 20/6/2007 - 20:50:06
+
+/////////////////////////////////////
+
+System Configuration
+////////////////////
+
+Path Directories:
+C:\Program Files\Silverfrost\FTN95
+C:\WINDOWS\system32
+C:\WINDOWS
+C:\WINDOWS\System32\Wbem
+c:\Program Files\Microsoft SQL Server\90\Tools\binn\
+c:\Program Files\Microsoft SQL Server\80\Tools\Binn\
+c:\Program Files\Microsoft Visual Studio 8\Common7\IDE\PrivateAssemblies\
+c:\Program Files\Microsoft SQL Server\90\DTS\Binn\
+c:\Program Files\Microsoft SQL Server\90\Tools\Binn\VSShell\Common7\IDE\
+C:\Program Files\cvsnt
+C:\Program Files\Lahey-Fujitsu Fortran\v7.1\Bin
+C:\Program Files\Lahey-Fujitsu Fortran\v7.1\Win32\Bin
+
+Project Directory: C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\FortranLibrary\FortranLibrary\
+Output Directory: C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\FortranLibrary\FortranLibrary\Debug\NET
+Output File: Debug\NET\FortranLibrary.dll
+
+Project Build
+/////////////
+
+   C:\Documents and Settings\Elmar\Mijn documenten\Visual Studio 2005\Projects\MathLib\FortranLibrary\FortranLibrary\FreeFormat2.f95
+
+Compiling...
+
+
+No files built - target is up-to-date
+
+
+FortranLibrary build succeeded.
+
+/////////////////////////////////////

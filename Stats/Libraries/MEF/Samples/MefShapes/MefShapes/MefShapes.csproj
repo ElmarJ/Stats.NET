@@ -1,0 +1,65 @@
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\SampleApplications.settings.targets"/>
+  <PropertyGroup>
+    <ProductVersion>10.0.20107</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC556AFF-9BA6-4A1A-94C9-513F168622B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <OutputPath>$(SampleOutputPath)\MefShapes</OutputPath>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MefShapes</RootNamespace>
+    <AssemblyName>MefShapes</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System"/>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data"/>
+    <Reference Include="System.Xml"/>
+    <Reference Include="WindowsBase"/>
+    <Reference Include="PresentationCore"/>
+    <Reference Include="PresentationFramework"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyAttributes.cs">
+      <Link>AssemblyAttributes.cs</Link>
+    </Compile>
+    <Compile Include="App.cs"/>
+    <Compile Include="DefaultAccelerationStrategy.cs"/>
+    <Compile Include="DefaultDimensions.cs"/>
+    <Compile Include="GlobalSuppressions.cs"/>
+    <Compile Include="ValueReferenceToShapeConverter.cs"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MefShapes.Shapes\MefShapes.Shapes.csproj">
+      <Project>{8DE4EE4D-2BF1-495B-AA35-8D393F87EBF8}</Project>
+      <Name>MefShapes.Shapes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\..\SampleApplications.targets"/>
+  <Target Name="AfterBuild">
+    <ItemGroup>
+      <FilesToCopy Include="$(SampleOutputPath)\..\System.ComponentModel.Composition.*"/>
+    </ItemGroup>
+    <Copy DestinationFolder="$(OutputPath)" SourceFiles="@(FilesToCopy)"/>
+  </Target>
+</Project>

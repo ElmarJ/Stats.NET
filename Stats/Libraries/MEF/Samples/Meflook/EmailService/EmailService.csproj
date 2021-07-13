@@ -1,0 +1,71 @@
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>..\..\..\..\..\..\binaries\x86chk\bin\i386\Applications\Meflook\</OutputPath>
+  </PropertyGroup>
+  <Import Project="..\..\SampleApplications.settings.targets"/>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20108</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB960ED5-8757-4968-A005-CE5555EB5C82}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <OutputPath>$(SampleOutputPath)\Meflook</OutputPath>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SignAssemblyAttribute>false</SignAssemblyAttribute>
+    <RootNamespace>EmailService</RootNamespace>
+    <AssemblyName>EmailService</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlToXamlConverter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\HtmlToXamlConverter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System"/>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data"/>
+    <Reference Include="System.Xml"/>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmailService.cs"/>
+    <Compile Include="IEmailService.cs"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\Brian.htm"/>
+    <Resource Include="Data\Chris.htm"/>
+    <Resource Include="Data\Erick.htm"/>
+    <Resource Include="Data\FolderList.xml"/>
+    <Resource Include="Data\Harsh.htm"/>
+    <Resource Include="Data\Hender.htm"/>
+    <Resource Include="Data\Iain.htm"/>
+    <Resource Include="Data\Inbox.xml"/>
+    <Resource Include="Data\Jamie.htm"/>
+    <Resource Include="Data\Jeff.htm"/>
+    <Resource Include="Data\Laurie.htm"/>
+    <Resource Include="Data\Mark.htm"/>
+    <Resource Include="Data\Other.htm"/>
+    <Resource Include="Data\Rideout.htm"/>
+    <Resource Include="Data\Shawn.htm"/>
+    <Resource Include="Data\Simon.htm"/>
+    <Resource Include="Data\Steve.htm"/>
+    <Resource Include="Data\VoiceMail.htm"/>
+  </ItemGroup>
+  <Import Project="..\..\SampleApplications.targets"/>
+</Project>

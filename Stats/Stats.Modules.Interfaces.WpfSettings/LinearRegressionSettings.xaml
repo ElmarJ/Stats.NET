@@ -1,0 +1,17 @@
+﻿<local:AnalysisSettingsControl
+    x:Class="Stats.Modules.Interfaces.Analysis.Wpf.LinearRegressionSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:a="clr-namespace:Stats.Modules.Analysis;assembly=Stats.Modules.Analysis"
+    xmlns:local="clr-namespace:Stats.Modules.Interfaces.Analysis.Wpf"
+    Height="300"
+    Width="300">
+    <local:AnalysisSettingsControl.Resources>
+        <a:LinearRegressionAnalysis x:Key="Analysis" />
+    </local:AnalysisSettingsControl.Resources>
+    <Grid DataContext="{StaticResource Analysis}">
+        <Rectangle Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="276" AllowDrop="True" />
+        <ListBox Height="145" HorizontalAlignment="Left" Margin="12,70,0,0" Name="variableList" VerticalAlignment="Top" Width="276" AllowDrop="True" ItemsSource="{Binding Parameters, Path=Parameters/IndependentVariables}" />
+        <Button Content="OK" Height="23" HorizontalAlignment="Left" Margin="12,247,0,0" Name="button1" VerticalAlignment="Top" Width="75" />
+    </Grid>
+</local:AnalysisSettingsControl>

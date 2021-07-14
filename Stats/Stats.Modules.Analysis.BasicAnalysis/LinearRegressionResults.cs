@@ -5,7 +5,7 @@ using Stats.Core.Data;
 using Stats.Core.Results;
 using System.ComponentModel.Composition;
 using Stats.Core.Data.Observations;
-using ShoNS.Array;
+using MathNet.Numerics.LinearAlgebra;
 
 namespace Stats.Modules.Analysis
 {
@@ -39,16 +39,16 @@ namespace Stats.Modules.Analysis
         /// <param name="resultMatrix">The result matrix.</param>
         /// <param name="independentVariables">The independent variable-array used in the regression.</param>
         /// <param name="rSquare">The R-square value.</param>
-        internal LinearRegressionResults(IVariable<IObservation> dependentVariable, IVariable<IObservation>[] independentVariables, DoubleArray resultMatrix, double rSquare, int decimals)
+        internal LinearRegressionResults(IVariable<IObservation> dependentVariable, IVariable<IObservation>[] independentVariables, Vector<double> resultMatrix, double rSquare, int decimals)
         {
             this.dependentVariable = dependentVariable;
             this.independentVariables = independentVariables;
 
-            constant = Math.Round(resultMatrix[0, 0], decimals);
+            constant = Math.Round(resultMatrix[0], decimals);
 
             for (int i = 0; i < independentVariables.Length; i++)
             {
-                coefficients[independentVariables[i]] = Math.Round(resultMatrix[i + 1, 0], decimals);
+                coefficients[independentVariables[i]] = Math.Round(resultMatrix[i + 1], decimals);
             }
 
             this.rSquare = Math.Round(rSquare, decimals);

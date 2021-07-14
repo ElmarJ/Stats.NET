@@ -162,6 +162,18 @@
       <Project>{811D1DD8-A2A1-46B0-9D62-68139EBD0220}</Project>
       <Name>Stats.Interoperability</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Stats.Modules.Analysis.BasicAnalysis\Stats.Modules.Analysis.BasicAnalysis.csproj">
+      <Project>{9317da95-425c-4e36-bc78-dce773408eda}</Project>
+      <Name>Stats.Modules.Analysis.BasicAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Stats.Modules.Interfaces.WpfSettings\Stats.Modules.Interfaces.Analysis.Wpf.csproj">
+      <Project>{868e009b-f5c5-4815-9ce4-e2d627e2635c}</Project>
+      <Name>Stats.Modules.Interfaces.Analysis.Wpf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Stats.Modules.Presenters.HTML\Stats.Modules.Presenters.HTML.csproj">
+      <Project>{3d2c8548-c90d-4346-8fd1-b583ec158803}</Project>
+      <Name>Stats.Modules.Presenters.HTML</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Stats.Modules.Presenters.WPF\Stats.Modules.Presenters.WPF.csproj">
       <Project>{A533D647-066C-4684-B4E6-C47D256A8DC1}</Project>
       <Name>Stats.Modules.Presenters.WPF</Name>

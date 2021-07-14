@@ -5,7 +5,7 @@ using System.Linq;
 using System.ComponentModel.Composition;
 using Stats.Core.Data.Observations;
 using Stats.Core.Results;
-using ShoNS.Array;
+using MathNet.Numerics.LinearAlgebra;
 
 namespace Stats.Modules.Analysis
 {
@@ -76,7 +76,8 @@ namespace Stats.Modules.Analysis
         private void Compute()
         {
             // The X'X matrix:
-            DoubleArray xTx = new DoubleArray(independentVariables.Length + 1, independentVariables.Length + 1);
+            
+            var xTx = Matrix<double>.Build.Dense(independentVariables.Length + 1, independentVariables.Length + 1);
 
             xTx[0, 0] = this.DataMatrix.Records.Count;
 
@@ -98,7 +99,7 @@ namespace Stats.Modules.Analysis
             }
 
             // The X'Y matrix:
-            DoubleArray xTy = new DoubleArray(independentVariables.Length + 1);
+            var xTy = Vector<double>.Build.Dense(independentVariables.Length + 1);
 
             var variableSum2 = (
                 from r in this.DataMatrix.Records
@@ -115,7 +116,7 @@ namespace Stats.Modules.Analysis
             }
 
             // Calculate the estimates (beta est = X'X.inv * X'Y):
-            DoubleArray resultMatrix = xTx.Inv() * xTy;
+            var resultMatrix = xTx.Inverse() * xTy;
 
             this.results = new LinearRegressionResults(
                 this.dependentVariable,

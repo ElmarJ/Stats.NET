@@ -12,19 +12,19 @@ namespace Stats.Interoperability.SPSS
     public static class SpssDataLoader
     {
 
-        public static InMemoryDataMatrix FromSpssFile(SavFileLibrary.SpssDataset.SpssDataset spssDataSet)
+        public static InMemoryDataMatrix FromSpssFile(SpssLib.SpssDataset.SpssDataset spssDataSet)
         {
-            var variableDictionary = new Dictionary<Core.Data.IVariable<IObservation>, SavFileLibrary.SpssDataset.Variable>();
+            var variableDictionary = new Dictionary<Core.Data.IVariable<IObservation>, SpssLib.SpssDataset.Variable>();
             var matrix = new InMemoryDataMatrix();
 
             foreach (var spssVar in spssDataSet.Variables)
             {
-                if (spssVar.Type == SavFileLibrary.SpssDataset.DataType.Numeric)
+                if (spssVar.Type == SpssLib.SpssDataset.DataType.Numeric)
                 {
                     var variable = matrix.Variables.Add<NumericalVariable>(spssVar.Name);
                     variableDictionary.Add(variable, spssVar);
                 }
-                if (spssVar.Type == SavFileLibrary.SpssDataset.DataType.Text)
+                if (spssVar.Type == SpssLib.SpssDataset.DataType.Text)
                 {
                     var variable = matrix.Variables.Add<TextVariable>(spssVar.Name);
                     variableDictionary.Add(variable, spssVar);

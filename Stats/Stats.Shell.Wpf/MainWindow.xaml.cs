@@ -44,8 +44,8 @@ namespace Stats.Shells.Wpf
             dlg.ShowDialog();
             using (var stream = dlg.OpenFile())
             {
-                var reader = new SavFileLibrary.FileParser.SavFileParser(stream);
-                var spssDataset = new SavFileLibrary.SpssDataset.SpssDataset(reader);
+                var reader = new SpssLib.FileParser.SavFileParser(stream);
+                var spssDataset = new SpssLib.SpssDataset.SpssDataset(reader);
                 dataMatrix = Stats.Interoperability.SPSS.SpssDataLoader.FromSpssFile(spssDataset);
             }
 

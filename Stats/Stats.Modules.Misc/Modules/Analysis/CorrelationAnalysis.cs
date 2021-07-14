@@ -1,20 +1,21 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using MathLib.Core.Analysis;
-using MathLib.Core.Data;
+using Stats.Core.Analysis;
+using Stats.Core.Data;
 using System.Linq;
 using System.ComponentModel.Composition;
-using MathLib.Core.Data.Observations;
-using MathLib.Core.Statistics;
+using Stats.Core.Data.Observations;
+using Stats.Core.Statistics;
+using MathLib.Modules.Analysis;
 
-namespace MathLib.Modules.Analysis
+namespace Stats.Modules.Analysis
 {
     [Export(typeof(IAnalysis<ParametersPlaceholder, CorrelationResults>))]
     [Analysis("Produces a Correlation Table", 1)]
     public class CorrelationAnalysis : Analysis<ParametersPlaceholder, CorrelationResults>
     {
-        List<Variable> variables;
+        List<Variable<IObservation>> variables;
         CorrelationResults results;
         private int decimals = 3;
 

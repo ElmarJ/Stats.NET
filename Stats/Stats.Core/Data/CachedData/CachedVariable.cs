@@ -1,12 +1,13 @@
 using System;
 using System.Data;
 using System.Xml.Serialization;
-using MathLib.Core.Data.ObservationTypes;
+using Stats.Core.Data;
+using Stats.Core.Data.Observations;
 
 namespace MathLib.Core.Data.CachedData
 {
     [Serializable]
-    public abstract class CachedVariable<T>: Variable<T>
+    public abstract class CachedVariable<T> : Variable<T> where T : IObservation
     {
         double sumOfSquares;
         double sum;
@@ -161,11 +162,6 @@ namespace MathLib.Core.Data.CachedData
         public override string ToString()
         {
             return this.Name;
-        }
-
-        public Descriptives Descriptives
-        {
-            get { return new Descriptives(this); }
         }
     }
 }

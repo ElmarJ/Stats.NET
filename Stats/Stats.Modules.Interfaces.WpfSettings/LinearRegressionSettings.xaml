@@ -2,7 +2,7 @@
     x:Class="Stats.Modules.Interfaces.Analysis.Wpf.LinearRegressionSettings"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:a="clr-namespace:Stats.Modules.Analysis;assembly=Stats.Modules.Analysis"
+    xmlns:a="clr-namespace:Stats.Modules.Analysis;assembly=Stats.Modules.Analysis.BasicAnalysis"
     xmlns:local="clr-namespace:Stats.Modules.Interfaces.Analysis.Wpf"
     Height="300"
     Width="300">

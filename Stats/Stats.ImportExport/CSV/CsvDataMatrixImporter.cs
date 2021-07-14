@@ -27,9 +27,7 @@ namespace Stats.Interoperability.CSV
                     select (value);
                 var rec = new Record(matrix, (string[])values);
 
-                int i = 0;
                 matrix.Records.Add(rec);
-
             }
             return matrix;
         }

@@ -12,6 +12,7 @@ using System.IO;
 using System.Reflection;
 using Stats.Core.Analysis.Interfaces;
 using System.Collections.ObjectModel;
+using System.Text.Json;
 
 namespace Stats.Core.Environment
 {
@@ -51,11 +52,13 @@ namespace Stats.Core.Environment
 
         public static void SaveProject(Project project, string filename)
         {
-            var formatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
-            using (var file = new FileStream(filename, FileMode.CreateNew))
+            var options = new JsonSerializerOptions
             {
-                formatter.Serialize(file, project);
-            }
+                WriteIndented = true,
+                // You may need to add custom converters if Project contains non-serializable types
+            };
+            var json = JsonSerializer.Serialize(project, options);
+            File.WriteAllText(filename, json);
         }
     }
 }
